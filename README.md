@@ -1,3 +1,25 @@
+## How use it again
+* clone directory: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git
+* Create run_script.py file in the Contributions-Importer-For-Github directory
+* Add this lines of codes:
+import git
+from git_contributions_importer import *
+
+repo = git.Repo("/var/www/link-cushion/")
+
+mock_repo = git.Repo("/var/www/mock-repo")
+
+importer = Importer([repo], mock_repo)
+importer.set_author(['yuratadevosyan01@gmail.com', 'yuratadevosyan01@gmail.com'])
+importer.import_repository()
+* Install dependencies:
+pip3 install gitpython
+pip3 install pathlib
+* Run command:
+cd ./Contributions-Importer-For-Github
+python3 run_script.py
+* Delete Contributions-Importer-For-Github directory and push
+
 **This is a mock repository.** 
 
 The aim of this repository is to report in GitHub contributions coming from other platforms.
