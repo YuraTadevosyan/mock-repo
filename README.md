@@ -20,6 +20,7 @@ cd ./Contributions-Importer-For-Github
 python3 run_script.py
 * Delete Contributions-Importer-For-Github directory and push
 
+
 **This is a mock repository.** 
 
 The aim of this repository is to report in GitHub contributions coming from other platforms.
